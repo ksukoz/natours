@@ -46,6 +46,7 @@ body {
 .main-slogan {
   color: #fff;
   text-transform: uppercase;
+  backface-visibility: hidden;
 }
 
 .main-slogan__primary {
@@ -53,10 +54,44 @@ body {
   font-size: 60px;
   letter-spacing: 35px;
   font-weight: 400;
+
+  animation-name: moveInLeft;
+  animation-duration: 1s;
 }
 
 .main-slogan__sub {
   display: block;
   font-size: 20px;
   letter-spacing: 17.4px;
+
+  animation-name: moveInRight;
+  animation-duration: 1s;
+}
+
+@keyframes moveInLeft {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px);
+  }
+  80% {
+    transform: translateX(10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes moveInRight {
+  0% {
+    opacity: 0;
+    transform: translateX(100px);
+  }
+  80% {
+    transform: translateX(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
