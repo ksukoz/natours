@@ -41,6 +41,7 @@ body {
   top: 40%;
   left: 50%;
   transform: translate(-50%, -50%);
+  text-align: center;
 }
 
 .main-slogan {
@@ -57,15 +58,16 @@ body {
 
   animation-name: moveInLeft;
   animation-duration: 1s;
+  animation-timing-function: ease-out;
 }
 
 .main-slogan__sub {
   display: block;
   font-size: 20px;
   letter-spacing: 17.4px;
+  margin-bottom: 60px;
 
-  animation-name: moveInRight;
-  animation-duration: 1s;
+  animation: moveInRight 1s ease-out;
 }
 
 @keyframes moveInLeft {
@@ -94,4 +96,29 @@ body {
     opacity: 1;
     transform: translateX(0);
   }
+}
+
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  padding: 15px 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 100px;
+  transition: .2s;
+}
+
+.btn:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+  transform: translateY(-1px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn--white {
+  background-color: #fff;
+  color: #777;
 }
