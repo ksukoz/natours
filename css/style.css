@@ -14,6 +14,7 @@ body {
 }
 
 .main-header {
+  position: relative;
   height: 95vh;
   background-image: 
     linear-gradient(to right bottom,
@@ -23,4 +24,14 @@ body {
   background-size: cover;
   background-position: top;
   clip-path: polygon(0 0, 0% 100%, 100% 75vh, 100% 0);
+}
+
+.main-header__logo-wrap {
+  position: absolute;
+  top: 40px;
+  left: 40px;
+}
+
+.main-logo {
+  height: 35px;
 }
