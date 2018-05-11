@@ -108,6 +108,11 @@ body {
   animation: moveInBottom .5s ease-out .75s;
   animation-fill-mode: backwards; }
 
+.row::after {
+  content: '';
+  display: table;
+  clear: both; }
+
 .main-header {
   position: relative;
   height: 95vh;
