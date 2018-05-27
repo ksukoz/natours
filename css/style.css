@@ -269,9 +269,9 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
     width: 90%;
-    text-align: center;
-    transform: translate(-50%, -50%); }
+    text-align: center; }
   .card__price-box {
     text-align: center;
     margin-bottom: 8rem;
@@ -387,11 +387,11 @@ body {
   border-radius: 50%;
   border: 5px solid #55c57a; }
   .form__radio-btn::after {
-    content: '';
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    content: '';
     height: 1.3rem;
     width: 1.3rem;
     border-radius: 50%;
@@ -414,9 +414,9 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
+    transform: translate(-50%, -50%);
     width: 75%;
     height: 50rem;
-    transform: translate(-50%, -50%);
     background-color: #fff; }
 
 .story {
@@ -450,7 +450,7 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, 20%);
+    transform: translate(-50%, -50%);
     color: #fff;
     font-size: 1.7rem;
     text-align: center;

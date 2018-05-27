@@ -8,12 +8,10 @@
   z-index: 2000;
 
   &__content {
-    position: absolute;
-    top: 50%;
-    left: 50%;
+    @include centered;
+
     width: 75%;
     height: 50rem;
-    transform: translate(-50%, -50%);
     background-color: $color-white;
   }
 }
