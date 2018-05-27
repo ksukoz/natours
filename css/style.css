@@ -415,9 +415,29 @@ body {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: table;
     width: 75%;
-    height: 50rem;
-    background-color: #fff; }
+    background-color: #fff;
+    border-radius: 3px;
+    overflow: hidden; }
+  .popup__left {
+    display: table-cell;
+    width: 33.3333333333%; }
+  .popup__right {
+    display: table-cell;
+    width: 66.666666667%;
+    padding: 3rem 5rem;
+    vertical-align: middle; }
+  .popup__img {
+    display: block;
+    width: 100%; }
+  .popup__text {
+    font-size: 1.4rem;
+    margin-bottom: 4rem;
+    column-count: 2;
+    column-gap: 4rem;
+    column-rule: 1px solid #eee;
+    hyphens: auto; }
 
 .story {
   width: 75%;
