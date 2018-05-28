@@ -40,8 +40,8 @@
     transform: scale(1);
 
     @include respond(tab-port) {
-      top: 4rem;
-      right: 4rem;   
+      top: 4.5rem;
+      right: 4.5rem;   
     }
 
     @include respond(phone) {
